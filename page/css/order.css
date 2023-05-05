@@ -1,0 +1,182 @@
+.whiteBoard{
+    position: relative;
+}
+
+.form{
+    position: absolute;
+    top: 10%;
+    left: 25%;
+
+    width: 50%;
+    height: 80%;
+
+    background-color: var(--nude);
+    color: black;
+    border: none;
+    border-radius: 70px;
+}
+
+.subform{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 100%;
+}
+
+.title{
+    position: absolute;
+    top: 4%;
+    left: 45%;
+    font-size: 40px;
+    text-align: center;
+}
+
+input{
+    background-color: var(--nude);
+    color: black;
+
+    border: none;
+    border-bottom: 1px solid black;
+    
+    font-size: 32px;
+
+    margin-bottom: 30px;
+
+    width: 80%;
+}
+
+select{
+    background-color: var(--nude);
+    color: black;
+
+    border: none;
+    border-bottom: 1px solid black;
+    
+    font-size: 32px;
+
+    margin-bottom: 30px;
+
+    width: 80%;
+}
+
+::placeholder{
+    color: black;
+}
+
+.next{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+
+    width: 80%;
+    height: 10%;
+
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+
+    font-size: 32px;
+
+}
+
+/* .textForChoose{
+    position: absolute;
+    top: 10%;
+    left: 35%;
+
+    color: var(--nude);
+    word-wrap: break-word;
+    width: 50%;
+    font-size: 32px;
+    float: right;
+} */
+
+.main{
+    position: absolute;
+    left: 5%;
+
+    font-size: 30px;
+    width: 80%;
+}
+
+.ch{
+    display: inline;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--nude);
+    color: black;
+    font-size: 30px;
+    width: 30%;
+    height: 50px;
+
+    position: absolute;
+    right: 0%;
+    /* float: right; */
+}
+
+.ch:active{
+    color: white;
+    background-color: gray;
+}
+
+.blockChoose{
+    margin: 50px;
+}
+
+.info{
+    display: inline;
+    margin: 30px 30px;
+    margin-bottom: 5%;
+}
+
+ul{
+    display: inline;
+    width: 50%;
+}
+
+/* .btnOrder{
+    position: absolute;
+    
+}
+
+.btnOrderBlock{
+    position: absolute;
+    
+} */
+
+.btnOrderBlock{
+    position: absolute;
+    margin: 10%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnOrder{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+
+    width: 20%;
+    height: 5%;
+
+    position: absolute;
+    right: 0%;
+
+    font-size: 32px;
+    margin: 30px;
+}
+

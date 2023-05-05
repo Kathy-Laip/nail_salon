@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+.homePage{
+    background-image: url(../img/image\ 1.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-clip: content-box;
+    background-size: cover;
+
+    font-size: 38px;
+    font-weight: 200;
+}
+
+:root{
+    --nude: #C6BBBB;
+}
+
+body{
+    font-family:'Montserrat', sans-serif;
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color: #aaa;
+}
+
+.services{
+    position: absolute;
+    top: 2%;
+    left: 12%;
+}
+
+.price{
+    position: absolute;
+    top: 2%;
+    left: 28%;
+}
+
+.aboutUs{
+    position: absolute;
+    top: 2%;
+    left: 42%;
+}
+
+.pedicure{
+    position: absolute;
+    top: 2%;
+    left: 55%;
+}
+
+.contacts{
+    position: absolute;
+    top: 2%;
+    right: 12%;
+}
+
+.name{
+    font-size: 63px;
+    font-style: inherit;
+
+    position: absolute;
+    left: 5%;
+    top: 35%
+}
+
+.appointment{
+    position: absolute;
+    top: 54%;
+    left: 7%;
+
+    font-size: 32px;
+    font-style: italic;
+
+    border-radius: 50px;
+    border: none;
+    background: var(--nude);
+
+    padding: 30px 50px;
+    width: 40%;
+}
+
+button:hover{
+    background-color: #aaa;
+    color: white;
+}
+
+.we{
+    background: var(--nude);
+    width: 100%;
+    height: 204px;
+
+    font-size: 80px;
+    text-align: center;
+    color: black;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    height: 580px;
+    position: relative;
+}
+
+.scissors{
+    background-image: url(../img/image\ 2.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-clip: content-box;
+    background-size: auto;
+
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+
+.textAboutUs{
+    position: absolute;
+    top: 10%;
+    left: 35%;
+
+    color: var(--nude);
+    word-wrap: break-word;
+    width: 50%;
+    font-size: 32px;
+    float: right;
+}
+
+.lak{
+    position: absolute;
+    right: 2%;
+    bottom: 2%;
+}
+
+.manicure{
+    position: absolute;
+    top: 5%;
+    left: 2%;
+
+    width: 30%;
+    height: 40%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.manicureWith{
+    position: absolute;
+    top: 23%;
+    left: 32%;
+
+    width: 35%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.manicureJapan{
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+
+    width: 35%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgBubbleOne{
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
+
+.text{
+    font-size: 40px;
+    text-decoration-line: underline;
+
+    position: absolute;
+    top: 5%;
+}
+
+.textTwo{
+    color: var(--nude);
+    position: absolute;
+    top: 25%;
+    word-wrap: break-word;
+    width: 80%;
+    text-align: left;
+    font-size: 30px;
+}
+
+.btnMore{
+    position: absolute;
+    bottom: 10%;
+
+    font-size: 20px;
+    font-style: italic;
+
+    border-radius: 50px;
+    border: none;
+    background: var(--nude);
+
+    padding: 15px 30px;
+    width: 60%;
+}
+
+.scissors2{
+    background-image: url(../img/image\ 7.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-clip: content-box;
+    background-size: auto;
+
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+
+.imgBubble{
+    object-fit: fill;
+    width: 20%;
+    height: 60%;
+    position: absolute;
+    right: 3%;
+    bottom: 3%;
+}
+
+.textInfo{
+    position: absolute;
+    top: 5%;
+    left: 65%;
+
+    color: var(--nude);
+    word-wrap: break-word;
+    width: 50%;
+    font-size: 32px;
+    float: right;
+}
+
+.textInfo{
+    position: absolute;
+    top: 5%;
+    left: 65%;
+
+    color: var(--nude);
+    word-wrap: break-word;
+    width: 50%;
+    font-size: 32px;
+    float: right;
+}
+
+.textPedicure{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+
+    color: var(--nude);
+    word-wrap: break-word;
+    width: 60%;
+    font-size: 32px;
+    float: right;
+    font-weight: bold;
+}
+
+.img1{
+    object-fit: fill;
+    width: 25%;
+    height: 90%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+.img2{
+    object-fit: fill;
+    width: 15%;
+    height: 30%;
+    position: absolute;
+    top: 70%;
+    right: 25%;
+}
+
+.btnappointment{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+
+    font-size: 32px;
+    font-style: italic;
+
+    border-radius: 50px;
+    border: none;
+    background: var(--nude);
+
+    padding: 30px 50px;
+    width: 40%;
+}
+
+
+.footer{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: var(--nude);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    font-size: 32px;
+}
+
+.address{
+    position: absolute;
+    top: 5%;
+
+    width: 30%;
+    height: 40%;
+}
+
+.time{
+    position: absolute;
+    bottom: 1%;
+
+    width: 100%;
+    height: 40%;
+    font-size: 38px;
+}
+
+.img3{
+    object-fit: fill;
+    width: 10%;
+    height: 40%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.img4{
+    object-fit: fill;
+    width: 10%;
+    height: 60%;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}

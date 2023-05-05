@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Маникюрный салон</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/order.css">
+    <style>
+        body{
+            margin: 0;
+            background-color: #EFECEC;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="whiteBoard">
+        <div class="title">
+            Запись
+        </div>
+        <div class="form">
+            <div class="subform">
+                <input type="text" name="" id="fio" placeholder="ФИО"> <br>
+                <input type="tel" name="" id="phone" placeholder="Номер"> <br>
+                <input type="email" name="" id="email" placeholder="Почта"> <br>
+                <select name="master" id="master">
+                    <option value="Мастер">Мастер</option>
+                </select>
+                <br>
+                <select name="date" id="date">
+                    <option value="Дата">Дата</option>
+                </select>
+                <br>
+                <select name="time" id="time">
+                    <option value="Время">Время</option>
+                </select>
+            </div>
+            <button class="next" type="button" onclick="clickNext()">Далее</button>
+        </div>
+    </div>
+
+    <div class="we">
+        <div>Выбор услуг</div>
+    </div>
+
+    <div class="main">
+
+        <div class="blockChoose">
+            <strong>Японский маникюр</strong> <br>
+            <div class="info">
+                <ul style="margin: 0;">
+                   <li>маникюр+уход — 1500 руб</li> 
+                </ul> 
+                <button class="ch">Выбрать</button>
+            </div>
+        </div>
+
+        <div class="blockChoose">
+            <strong>Аппаратный маникюр</strong> <br>
+            <div class="info">
+                <ul style="margin-top: 0;">
+                    <li>без покрытия — 1000 руб</li>
+                </ul> 
+                <button class="ch">Выбрать</button>
+            </div>
+            <br>
+            <div class="info">
+                <ul style="margin: 0;">
+                    <li>с лаком SMIT AND CULT — 1500 руб</li>
+                </ul> 
+                <button class="ch">Выбрать</button>
+            </div>
+            <br>
+            <div class="info">
+                <ul style="margin: 0;">
+                    <li>с гель-лаком CF/FEDUA — 1700 руб</li>
+                </ul> 
+                <button class="ch">Выбрать</button>
+            </div>
+            <br>
+            <div class="info">
+                <ul style="margin: 0;">
+                    <li>гель-лак + френч (или лунки) — 2100 руб</li>
+                </ul> 
+                <button class="ch">Выбрать</button>
+            </div>
+        </div>
+        
+        <div class="blockChoose">
+            <strong>Комплексный маникюр</strong> <br>
+            <div class="info">
+                <ul style="margin: 0;">
+                    <li>маникюр+уход — 2500 руб</li>
+                </ul> 
+                <button class="ch">Выбрать</button>
+            </div>
+        </div>
+
+        <div class="blockChoose">
+            <strong>Маникюр без покрытия</strong> <br>
+            <div class="info">
+                <ul style="margin: 0;">
+                    <li>маникюр — от 700 руб</li>
+                </ul> 
+                <button class="ch">Выбрать</button>
+            </div>
+        </div>
+        <br>
+
+        <div class="blockChoose">
+            <strong>Комбинированный педикюр</strong> <br>
+            <div class="info">
+                <ul style="margin: 0;">
+                    <li>без покрытия — от 1800 руб</li>
+                </ul> 
+                <button class="ch">Выбрать</button>
+            </div>
+            <br>
+            <div class="info">
+                <ul style="margin: 0;">
+                    <li>с лаковым покрытием — от 2500 руб</li>
+                </ul> 
+                <button class="ch">Выбрать</button>
+            </div>
+            <br>
+            <div class="info">
+                <ul style="margin: 0;">
+                    <li>с покрытием гель-лак — от 2600 руб</li>
+                </ul> 
+                <button class="ch">Выбрать</button>
+            </div>
+        </div>
+
+        <div class="blockChoose">
+            <div class="info">
+                <button class="btnOrder">Записаться!</button>
+            </div>
+        </div>
+
+        <div class="blockChoose" style="width:100%;"></div>
+        
+    </div>
+
+    
+
+    
+</body>
+<script type="text/javascript">
+    const wH = window.screen.height + 'px'
+    const wW = window.screen.width + 'px'
+    const backImg = document.querySelector('.whiteBoard')
+    backImg.style.height = wH
+    backImg.style.width = wW
+
+    var hiddenElement = document.querySelector(".we");
+
+    function clickNext(){
+            let rect = hiddenElement.getBoundingClientRect()
+            window.scrollTo(0, rect.top);
+        }
+</script>
+<script src="./js/order.js"></script>
+</html>

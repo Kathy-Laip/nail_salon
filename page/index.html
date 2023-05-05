@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Maникюрный салон</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: #EFECEC;
+        }
+    </style>
+</head>
+<body>
+    <div class="homePage">
+        <a class="services" onclick="clickServices()">Услуги</a>
+        <a class="price" onclick="clickPrice()">Прайс</a>
+        <a class="aboutUs" onclick="clickAbout()">О нас</a>
+        <a class="pedicure" onclick="clickPedicure()">Педикюр</a>
+        <a class="contacts" onclick="clickContact()">Контакты</a>
+
+        <div class="name">Маникюрный салон</div>
+
+        <button class="appointment" onclick="btnOrder()">записаться на прием</button>
+    </div>
+
+    <div class="we">
+        <div>О нас</div>
+    </div>
+
+    <div class="container">
+        <div class="scissors"></div>
+        <div class="textAboutUs">Мы создаем не просто салон красоты, а гармоничное пространство  с невероятной атмосферой , которая сможет зарядить вас любовью к самому важному человеку вашей жизни - к самой себе.</div>
+        <div class="lak">
+            <img class="imgBubbleOne" src="./img/image 4.png" alt="">
+        </div>
+    </div>
+
+    <div class="we">
+        <div>Услуги</div>
+    </div>
+
+    <div class="container" style="height: 1200px !important;">
+        <div class="manicure">
+            <img class="imgBubbleOne" src="./img/bubble.png" alt="">
+            <div class="text">Маникюр</div>
+            <div class="textTwo">Приведем в порядок ваши пальчики.
+                Делаем аппаратный и новый пилочный маникюр.</div>
+            <button class="btnMore">подробнее</button>
+        </div>
+        <div class="manicureWith">
+            <img class="imgBubbleOne" src="./img/bubble2.png" alt="">
+            <div class="text" style="top: 15% !important;">Маникюр с уходом</div>
+            <div class="textTwo" style="top: 30% !important; width: 90%">Забота о здоровье ногтей
+                и кожи рук.</div>
+            <button class="btnMore" style="bottom: 20%;">подробнее</button>
+        </div>
+        <div class="manicureJapan">
+            <img class="imgBubbleOne" src="./img/bubble3.png" alt="">
+            <div class="text" style="top: 15% !important;">Японский маникюр</div>
+            <div class="textTwo" style="top: 30% !important; width: 90%">Бережный уход
+                и естественная красота.</div>
+            <button class="btnMore" style="bottom: 20%;">подробнее</button>
+        </div>
+    </div>
+
+    <div class="we">
+        <div>Прайс-лист</div>
+    </div>
+
+    <div class="container">
+        <div class="scissors2"></div>
+        <div class="textAboutUs" style="left: 26%; top: 5%;">
+            <strong>Японский маникюр</strong> <br>
+             <ul style="margin: 0;">
+                <li>маникюр+уход — 1500 руб</li>
+             </ul> <br>
+            <strong>Аппаратный маникюр</strong>
+            <ul style="margin: 0;">
+                <li>без покрытия — 1000 руб</li>
+                <li>с лаком SMIT AND CULT — 1500 руб</li>
+                <li>с гель-лаком CF/FEDUA — 1700 руб</li>
+                <li>гель-лак + френч (или лунки) — 2100 руб</li>
+             </ul> <br>
+             <strong>Комбинированный педикюр</strong>
+            <ul style="margin: 0;">
+                <li>без покрытия — от 1800 руб</li>
+                <li>с лаковым покрытием — от 2500 руб</li>
+                <li>с покрытием гель-лак — от 2600 руб</li>
+             </ul> <br>
+        </div>
+         <div class="textInfo">
+            <strong>Комплексный маникюр</strong>
+            <ul style="margin: 0;">
+                <li>маникюр+уход — 2500 руб</li>
+             </ul> <br>
+         </div>
+        <div>
+            <img class="imgBubble" src="./img/image 8.png" alt="">
+        </div>
+    </div>
+
+    <div class="we">
+        <div>Педикюр</div>
+    </div>
+
+    <div class="container">
+        <div class="textPedicure"><strong>Сделаем так, что после выхода из студии вам скорее захочется надеть любимые босоножки. 
+            А ваши стопы станут мягкими как никогда. </strong></div>
+        <div>
+            <img class="img1" src="./img/image 9.png" alt="">
+            <img class="img2" src="./img/image 10.png" alt="">
+        </div>
+
+        <button class="btnappointment" onclick="btnOrder()">записаться на прием</button>
+    </div>
+
+    <div class="footer">
+        <div class="address">
+            <div>
+                Казань <br>
+                Николая Столбова 1 <br>
+                +7 (843)2-393-343 <br>
+            </div>
+        </div>
+        <div class="time">Каждый день с 10 до 22</div>
+
+        <div>
+            <img class="img3" src="./img/image 11.png" alt="">
+            <img class="img4" src="./img/image 12.png" alt="">
+        </div>
+    </div>
+
+
+</body>
+    <script type="text/javascript">
+        const wH = window.screen.height + 'px'
+        const wW = window.screen.width + 'px'
+        const backImg = document.querySelector('.homePage')
+        backImg.style.height = wH
+        backImg.style.width = wW
+
+        var hiddenElement = document.querySelectorAll(".we")[1];
+        var hiddenElementPrice = document.querySelectorAll(".we")[2];
+        var hiddenElementAbout = document.querySelectorAll(".we")[0];
+        var hiddenElementPedicure = document.querySelectorAll(".we")[3];
+        var hiddenElementContact = document.querySelectorAll(".footer")[0];
+
+        function clickServices(){
+            let rect = hiddenElement.getBoundingClientRect()
+            window.scrollTo(0, rect.top);
+        }
+
+        function clickPrice(){
+            let rect = hiddenElementPrice.getBoundingClientRect()
+            window.scrollTo(0, rect.top);
+        }
+
+        function clickAbout(){
+            let rect = hiddenElementAbout.getBoundingClientRect()
+            window.scrollTo(0, rect.top);
+        }
+
+        function clickPedicure(){
+            let rect = hiddenElementPedicure.getBoundingClientRect()
+            window.scrollTo(0, rect.top);
+        }
+        
+        function clickContact(){
+            let rect = hiddenElementContact.getBoundingClientRect()
+            window.scrollTo(0, rect.top);
+        }
+
+        function btnOrder(){
+            window.location.href = './order.html'
+        }
+
+    </script>
+</html>
